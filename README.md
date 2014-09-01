@@ -27,4 +27,10 @@ Make sure to keep the patch names sequential so they get applied in the right or
 
 ## Disclaimer
 
-Use at your own risk, make sure to test before rolling out to Production.
+Please use extreme caution before putting on a production server!!!
+
+## Updates
+
+#9/1/2014
+Added updated patches for Clearwater
+Added Temporary File Removal to keep from filling up root directory
