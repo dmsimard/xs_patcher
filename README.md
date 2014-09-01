@@ -36,3 +36,5 @@ Please use extreme caution before putting on a production server!!!
 Added updated patches for Clearwater
 
 Added temporary file Removal to keep from filling up root directory
+
+Added reboot prompt and helpful information to user
