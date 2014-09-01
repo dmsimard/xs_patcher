@@ -89,7 +89,7 @@ function apply_patches {
 			fi
 		if [[ $REPLY =~ ^[Nn]$ ]]
 			then
-			echo "We're all done here!"
+			echo "Looks like we're all done here!"
 		fi
 }
 
