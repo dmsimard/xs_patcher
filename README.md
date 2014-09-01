@@ -1,3 +1,5 @@
+##See update notes at bottom of this file!
+
 ## xs_patcher - patches XenServer host with all released hotfixes
 
 This script will retrieve and apply all of the latest hotfixes for Citrix XenServer.
