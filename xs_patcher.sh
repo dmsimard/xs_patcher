@@ -84,7 +84,6 @@ function apply_patches {
 		echo    
 		if [[ $REPLY =~ ^[Yy]$ ]]
 			then
-			echo "Rebooting!"
 			init 6
 			fi
 		if [[ $REPLY =~ ^[Nn]$ ]]
