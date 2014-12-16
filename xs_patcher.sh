@@ -74,17 +74,10 @@ function apply_patches {
     rm -rf tmp/*
     echo "Temporary Files have been cleaned up!"
     echo "All Possible Patches have been applied!"
-    echo "You should reboot and run again to apply and patches that needed prerequisites."
-    echo "IF YOU'RE IN A PRODUCTION ENVIRONMENT BE MINDFUL HERE!"
 
-    read -p "Do you want to reboot? Type y or n:" -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        reboot
-    fi
-    if [[ $REPLY =~ ^[Nn]$ ]]; then
-        echo "Looks like we're all done here!"
-    fi
+    echo "Rebooting in 60 seconds..."
+    sleep 60
+    reboot
 }
 
 get_xs_version
