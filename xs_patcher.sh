@@ -58,12 +58,14 @@ function apply_patches {
                 wget -q $PATCH_URL
                 unzip -qq $PATCH_NAME.zip
                 mv $PATCH_NAME.xsupdate ../cache
+                rm -f $PATCH_NAME.zip
                 cd ..
             fi
 
             echo "Applying ${PATCH_NAME}... [ Release Notes @ ${PATCH_KB} ]"
             xe patch-upload file-name=cache/$PATCH_NAME.xsupdate
             xe patch-apply uuid=$PATCH_UUID host-uuid=$HOSTID
+            rm -f cache/$PATCH_NAME.xsupdate
         fi
     done
 
